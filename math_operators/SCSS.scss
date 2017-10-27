@@ -1,0 +1,26 @@
+$a : 16px;    $b : 32px;    $c : 4.5px;   $d : -12px;
+
+$eq : 4 - ( 6 + $b );
+
+div{
+      //SASS math operators
+      width: 5 + 10 + $a - $b * 2 / $c ;
+      //round to the nearest whole int
+      width: round( 5 + 10 + $a - $b * 2 / $c ) ;
+      //round down to whole int
+      width: floor( 5 + 10 + $a - $b * 2 / $c );
+      //round up to whole int
+      width: ceil( 5 + 10 + $a - $b * 2 / $c - .4 ) ;
+      //converts to percentage
+      width: percentage( 4.5 );
+      //converts into positive
+      width: abs( $d );
+      //outputs the smallest number on a list
+      width: min( 10, 20, 50, 50.1, $a );
+      //outputs the biggest number on a list
+      width: max( 10, 20, 50, 50.1, $a );
+      //produce random between 1 and set limit
+      width: random( 100 );
+      height: $b % $c ;
+      line-height: $eq ;
+}

@@ -1,0 +1,55 @@
+$headers :  h1   ,   h2   ,   h3  ,   h4   ,   h5   ,   h6;
+$fontSize : 55px , 45px , 40px , 35px , 30px , 25px;
+
+//create a map
+$headersMap : (
+      h1 : 55px,
+      h2 : 50px,
+      h3 : 45px
+);
+
+//get length
+$len : length($headers);
+$index : 1;
+
+//time saver (loop thorough headings)
+@for $i from 1 to 7 {
+  //assign $i to h tag
+  h#{$i} {
+    font-size: 12px;}
+}
+
+//using variables
+@for $i from $len to 1 {
+  #{nth($headers, $i)} {
+    font-size: nth($fontSize, $i) + 100;
+  }
+}
+
+//for each
+@each $head in $headers {
+  #{$head} {
+    font-size: 12px;
+  }
+}
+
+@each $head, $font in $headersMap {
+  #{$head} {
+    font-size: $font;
+  }
+}
+
+//while loop
+@while $index <= 6 {
+  h#{$index} {
+    font-size: 10px;
+  }
+  $index : $index + 1;
+}
+
+@while $index <= 6 {
+  #{nth($headers, $index)} {
+    font-size: nth($fontSize, $index);
+  }
+  $index : $index + 1;
+}

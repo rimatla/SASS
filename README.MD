@@ -66,3 +66,12 @@ color: green;
 
 #### maps are manipulated by SASS scripts functions
 `map_keys(), map_values(), map_has_key(), map_get(), map_merge(), inspect(), map_remove()`
+
+#### SASS math operators
+`round(), floor(), ceil(), percentage(), abs(), min(), max(), random()`
+
+#### if else syntax
+`@if, @else, @else if`
+
+#### loops
+`@for, @each, @while`
