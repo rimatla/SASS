@@ -23,8 +23,8 @@
 `sass fileName.scss:fileName.css --style expanded --sourcemap=none`
 
 ### Watch it
-`sass --watch fileName.scss:fileName.css --style expanded --sourcemap=none`
-`sass --watch Directory:CSS --style expanded --sourcemap=none`
+````sass --watch fileName.scss:fileName.css --style expanded --sourcemap=none````  
+````sass --watch Directory:CSS --style expanded --sourcemap=none````  
 
 ### Variables naming convention (no spaces or spec characters, numbers are fine)
 `$white:#fff;`
