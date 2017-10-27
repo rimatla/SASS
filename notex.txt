@@ -13,3 +13,5 @@ not to be compiled directly to CSS
 
 - WATCH whole directory on 'import'
 sass --watch SASS_Import:CSS --style expanded --sourcemap=none
+
+- Maps allows for a complex array of data to be grouped together

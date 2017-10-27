@@ -1,0 +1,37 @@
+//- Maps allows for a complex array of data to be grouped together
+$map1 : (
+      'KeyName'    : 'Value',
+      'AnotherKey' : 200px
+);
+
+$map2 : (   'key1' : 'value1',   'key2' : 'value2',   'key3' : 'value3' );
+
+$map3 : (
+      'KeyName'    :  'targeting a key produces it\'s value!',
+      'String'          :  string,
+      'Number'      :  102,
+      'List'             :  ( background .2s,  color .3s ),
+      'NestedMap' :  (
+            'NestedKey' :  'Nested value',
+            'url'              :  "../images/nestedImg.png",
+            'Width'         :  300px
+      )
+ );
+
+// maps are manipulated by SASS scripts functions
+.foo {
+      //get all keys within the map
+      content: map_keys($map1);
+      //get all values within the map
+      content: map_values($map1);
+      //has key?
+      content: map_has_key($map1, 'apple');
+      //obtain value
+      content: map_get($map3, 'Number');
+      //merge maps together: use inspect to prevent css errors
+      content: inspect(map_merge($map1, $map2));
+      //remove single or multiple keys
+      content: inspect(map_remove($map2, 'key1', 'key3'));
+}
+
+

@@ -1,0 +1,41 @@
+$List1 : 200px;
+$List2 : 1px 2px 3px black,; //define where you want the comma shud you use a separator ie: line 22
+$List3 : Helvetica, Arial, sans-serif;
+
+$zip1: 1px 2px 3px 4px;
+$zip2: 4em 3em 2em 1em;
+$zip3: black green blue red;
+
+$NestedList :   1px 2px 3px green,   6px 7px 8px blue,   3px 2px 1px yellow;
+
+//SASS built in functions
+html {
+      //get length
+      background: length($List3);
+      //get value: takes two args
+      font-size: nth($zip2, 2);
+      //reset value: requires 3 args
+      color: set_nth($zip3, 4, white);
+      //returns separator: return value is either a space or comma
+      height: list-separator($List2);
+      //join lists and values together: 3 args
+      margin: join($List2, $List3, comma);
+      font: join($List3, 'serif');
+      //add value to end of a list
+      width: append($List1, 300px, space);
+      //return value's position within the list: takes 2 args
+      list-style: index($zip2, 1em);
+      //combine several into a single multidimensional list
+      padding: zip(1px 1px 1px 1px, 2px 2px 2px 2px);
+}
+
+body {
+      width: length( $List2 ) ;
+      box-shadow: nth( $NestedList , 2 ) ;
+      text-shadow: set-nth( $NestedList , 3 , 0em 1em .5em brown ) ;
+      height: list-separator( $List3 ) ;
+      line-height: join( $NestedList , $List3,  comma ) ;
+      font: append( $zip3 , gray ) ;
+      font-size: index( $NestedList , 3px 2px 1px yellow ) ;
+      background: zip( $zip1 , $zip2 , $zip3 ) ;
+}

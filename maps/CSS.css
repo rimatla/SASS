@@ -1,0 +1,8 @@
+.foo {
+  content: "KeyName", "AnotherKey";
+  content: "Value", 200px;
+  content: false;
+  content: 102;
+  content: ("KeyName": "Value", "AnotherKey": 200px, "key1": "value1", "key2": "value2", "key3": "value3");
+  content: ("key2": "value2");
+}

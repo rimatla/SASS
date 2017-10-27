@@ -61,3 +61,8 @@ color: green;
 }
 ``
 
+#### A few built in functions
+`lenght(), nth(), set-nth(), list-separator(), join(), append(), index(), zip()`
+
+#### maps are manipulated by SASS scripts functions
+`map_keys(), map_values(), map_has_key(), map_get(), map_merge(), inspect(), map_remove()`
