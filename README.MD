@@ -75,3 +75,6 @@ color: green;
 
 #### loops
 `@for, @each, @while`
+
+#### functions
+`@function`
