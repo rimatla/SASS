@@ -15,9 +15,9 @@
 `sass --watch Directory:CSS`
 
 ### - Specify compiling format 
-`sass fileName.scss:fileName.css --style compact`  
-`sass fileName.scss:fileName.css --style compressed`  
-`sass fileName.scss:fileName.css --style expanded`  
+````sass fileName.scss:fileName.css --style compact````  
+````sass fileName.scss:fileName.css --style compressed````   
+````sass fileName.scss:fileName.css --style expanded````  
 
 ### Get Rid of .map 
 `sass fileName.scss:fileName.css --style expanded --sourcemap=none`
