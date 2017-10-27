@@ -1,0 +1,51 @@
+//make the 16 divs design responsive
+//$equ: 100% / 16 ;
+
+//target all child divs
+#grid > div {
+   height: 25px;
+   //width: $equ;
+   background: #ccc;
+   border: 1px solid #aaa;
+   //include padding and border within the width of element
+   box-sizing: border-box;
+   float: left;
+}
+
+//full page
+$max: 16;
+@for $i from 1 through $max {
+   $equ: 100% / $i; //responsive
+   #grid.cell-#{$i} > div { //target child divs
+      width: $equ;
+   }
+}
+
+//media queries
+//$map (key: value,);
+$map: (
+   //set px for media queries ie: screenSize: number of cells
+        850: 12,
+        450: 6,
+        380: 3
+);
+
+//loop
+@each $key, $val in $map {
+   @media all and (max-width: $key + px) {
+      @for $i from 1 through $val {
+         $equ: 100% / $i; //responsive
+
+         #grid.cell-#{$key}-#{$i} > div { //target child divs
+            width: $equ;
+         }
+      }
+   }
+}
+
+
+
+
+
+
+

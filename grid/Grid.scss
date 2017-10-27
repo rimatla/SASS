@@ -1,0 +1,23 @@
+//make the 16 divs design responsive
+//$equ: 100% / 16 ;
+
+//target all child divs
+#grid > div {
+   height: 25px;
+   //width: $equ;
+   background: #ccc;
+   border: 1px solid #aaa;
+   //include padding and border within the width of element
+   box-sizing: border-box;
+   float: left;
+}
+
+//how many rows per line?
+//loop through divs, generate new classes applying with
+$max: 16;
+@for $i from 1 through $max {
+   #grid.cell-#{$i} > div { //target child divs
+      $equ: 100% / $i; //responsive
+      width: $equ;
+   }
+}

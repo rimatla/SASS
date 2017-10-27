@@ -78,3 +78,13 @@ color: green;
 
 #### functions
 `@function`
+
+### DRY - Source Maps lets you make changes on the fly (browser) and automatically add to your local project
+````On Terminal go to source tab````
+````right click on desired file````
+````Add folder to workspace````
+```Allow Permissions```
+
+### Responsive Design
+`check out grid and media queries directory`
+ 

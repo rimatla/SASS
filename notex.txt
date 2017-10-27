@@ -15,3 +15,5 @@ not to be compiled directly to CSS
 sass --watch SASS_Import:CSS --style expanded --sourcemap=none
 
 - Maps allows for a complex array of data to be grouped together
+
+- source-map files tells the browser what location to point. With it browser will point to scss without it will point to css

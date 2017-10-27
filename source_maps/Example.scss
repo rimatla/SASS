@@ -1,0 +1,14 @@
+$gray: #777;
+
+@mixin txtStyle($size, $weight, $lineHeight) {
+  padding: 0;
+  margin: 0;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
+
+h1  {
+  color: $gray;
+  @include txtStyle(25px, 200, 180%)
+}
