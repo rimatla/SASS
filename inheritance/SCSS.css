@@ -1,0 +1,24 @@
+#parent {
+  background: green; }
+  #parent #child-one {
+    background: yellow;
+    font-size: 1em; }
+    #parent #child-one .inner-child {
+      color: #000; }
+  #parent #child-two {
+    font-weight: bold; }
+    #parent #child-two .inner-child .list {
+      display: inline-block; }
+  #parent.container {
+    background: blue; }
+  #parent .child-3, #parent .child-4, #parent .child-5 {
+    font-weight: 100; }
+
+.content, .sign, video, image elem1, elem2, elem3 {
+  background: red;
+  font-size: 12px; }
+
+.content {
+  line-height: 2px; }
+
+/*# sourceMappingURL=SCSS.css.map */

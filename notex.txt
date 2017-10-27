@@ -1,0 +1,15 @@
+- SASS vs SCSS
+The only difference is syntax.
+With SASS indentation is key!
+
+- Inheritance can be achieved through properties and selectors
+
+- Mixins in SASS take a functional approach to generate content
+
+- Import in SASS has many benefits over traditional imports in CSS.
+
+- Prefixing a file with a underscore _ implies that those files are 'partials' to be shared/used by SCSS files and
+not to be compiled directly to CSS
+
+- WATCH whole directory on 'import'
+sass --watch SASS_Import:CSS --style expanded --sourcemap=none

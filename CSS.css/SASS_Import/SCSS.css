@@ -1,0 +1,6 @@
+@import url(import.css);
+div.content {
+  width: 2048px;
+  height: 1024px;
+  background: green;
+}

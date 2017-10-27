@@ -1,0 +1,46 @@
+body {
+  font-weight: bold;
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3), 4px 2px 2px 2px gray;
+  -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3), 4px 2px 2px 2px gray;
+  -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3), 4px 2px 2px 2px gray;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3), 4px 2px 2px 2px gray;
+}
+body #main {
+  color: blue;
+  line-height: 2px;
+  font-style: italic;
+  list-style: none;
+}
+
+@-webkit-keyframes myAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes myAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes myAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

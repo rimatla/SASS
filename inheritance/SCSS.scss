@@ -1,0 +1,61 @@
+// Inheritance can be achieved through properties and selectors
+
+$el : button;
+$list : elem1, elem2, elem3;
+/////////////////////////////////////// Inheritated Selectors ////////////////////////////////////////////////////
+
+//parent selector
+#parent {
+  background:green;
+  //selector within a parent selector
+  #child-one{
+    background: yellow;
+    font-size: 1em;
+
+    //drill in further
+    .inner-child {
+      color: #000;
+    }
+  }
+
+  //2nd child
+  #child-two {
+    font-weight: bold;
+
+    //drill in even further
+    .inner-child .list {
+      display: inline-block;
+    }
+  }
+
+  //specificity on #parent
+  &.container {
+    background: blue;
+  }
+
+  //also
+  .child-3, .child-4, .child-5 {
+    font-weight: 100;
+  }
+
+}
+
+
+/////////////////////////////////////// Inheritated Properties ///////////////////////////////////////////////////
+
+//set placeholder
+%shared  {
+  background: red;
+  font-size: 12px;
+}
+
+//pass it
+.content {
+  @extend %shared;
+  //pass unique props
+  line-height: 2px;
+}
+
+.sign, video, image #{$list} {
+  @extend %shared;
+}
