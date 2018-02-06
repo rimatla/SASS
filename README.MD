@@ -19,8 +19,11 @@
 ````sass fileName.scss:fileName.css --style compressed````   
 ````sass fileName.scss:fileName.css --style expanded````  
 
-### Get Rid of .map 
+### NO .map 
 `sass fileName.scss:fileName.css --style expanded --sourcemap=none`
+
+### Go from diff directories to file + NO .map + No Cache 
+`sass scss/nav.scss:css/nav.css --style expanded --sourcemap=none --no-cache`
 
 ### Watch it
 ````sass --watch fileName.scss:fileName.css --style expanded --sourcemap=none````  
